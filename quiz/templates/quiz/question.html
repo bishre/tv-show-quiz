@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>QUIZ</title>
+
+</head>
+<body>
+<img src="https://i.ytimg.com/vi/GNjPL-sazds/maxresdefault.jpg"  style="width:900px;height:300px">
+
+
+				<a  href="{% url 'start_page' %}">HOME</a></li>
+
+
+			<h1>{{ quiz.name }}</h1>
+			<h3>{{ question_number }}. {{ question }}</h3>
+				<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+				{% csrf_token %}
+				<input type="radio" name="answer"  value="1" checked="checked">
+				<label  >{{ answer1 }}</label><br>
+				<input type="radio" name="answer" value="2">
+				<label  >{{ answer2 }}</label><br>
+				<input type="radio" name="answer"  value="3">
+				<label  >{{ answer3 }}</label><br>
+				
+				<button type="submit"  style="vertical-align: middle"><span>NEXT</span>
+				</button>
+				</form>
+</body>
+</html>

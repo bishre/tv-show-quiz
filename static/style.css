@@ -1,0 +1,273 @@
+body {
+    background-image: url("/static/blackboard.jpg");
+    background-size: cover;
+}
+
+.startsidan {
+    background-color: white;
+    background-image: none;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    overflow: hidden;
+    z-index: -1000;
+}
+
+.navbar{
+    background-color: rgba(255,255,255,0);
+    border-radius: 0px;
+    margin-bottom: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    margin-top: 20px;
+    
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 1.0;
+    text-align: center;
+
+
+}
+
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    border-bottom: 1px black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    border-bottom: solid 2px; 
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+}
+
+
+
+
+.startknapp {
+    color: black;
+    text-decoration: none;
+}
+
+.startknapp:hover {
+    color: white;
+    text-decoration: none;
+    transition-property:color, text;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: linear;
+
+}
+
+
+
+
+.box1 {
+   
+    padding-top: 60px;
+    padding: 60px 10px 10px 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+
+
+    
+}
+
+.box1 {
+    background-color: rgba(202, 242, 202, 0.6);
+    
+}
+
+.box1:hover {
+    
+    background-color: rgba(93, 152, 141, 0.8);
+
+#box_text {
+    opacity: 1.0;
+
+}
+    
+}
+
+.box1:hover {
+  transform: scale(1.1);
+}
+.jumbotron2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 5px;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    
+}
+
+.jumbotron1 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+.quizknapp {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgba(93, 152, 141, 0.8);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.quizknapp2 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgba(93, 152, 141, 0.8);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.quizknapp span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.quizknapp span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.quizknapp:hover span {
+  padding-right: 15px;
+}
+
+.quizknapp:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.questions {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.question2 {
+    background-color: rgba(0,0,0,0.3);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.question3 {
+    background-color: rgba(0,0,0,0.3);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.check:hover {
+    color: #009999;
+    transition-property:color, text;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: linear;
+}
+
+
+
+input[type='radio'] {
+   -webkit-appearance: none; /*för att ta bort standarden*/
+}
+input[type='radio']:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    top: 2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+input[type='radio']:checked:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    top: 2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(93, 152, 141);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    }

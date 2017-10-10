@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>WELCOME TO QUIZ </title><link href="/static/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+
+
+
+</head>
+
+<body >
+<div class="background-wrap" >
+<video  autoplay loop>
+  <source src="/static/videos2.mp4"  type="video/mp4">
+
+</video>
+</div>
+<div class="content">
+
+<ul>
+    <li><a  href="{% url 'start_page' %}"><h1>HOME</h1></a></li>
+    
+    <h1><font color="white">WELCOME TO TV QUIZ</font></h1>
+    <p><h3><font color="white">check how much you know about your favorite tv-shows</font></h3> </p>
+<li>{% for quiz in quizzes %}
+		<a href= "{% url "quiz_page" quiz.quiz_number %}" >
+		<h1>{{ quiz.name }}</h1>
+
+
+		</a>
+{% endfor %}
+</li>>
+</ul>
+</div>
+<script>
+function myFunction() {
+    alert("Programmer : Bibhor Shrestha");
+}
+</script>
+
+<input type="button"  onclick="myFunction()"  value="About Programmer"  />
+
+
+</body>
+</html>

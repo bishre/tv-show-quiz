@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>QUIZ</title>
+
+</head>
+<body>
+
+<img src="http://www.thecotswoldengraver.co.uk/images/A1277B.jpg"  style="width:200px;height:200px">
+				<a  href="{% url 'start_page' %}">HOME</a></li>
+
+			<h1>YOUR RESULT WAS:</h1>
+			<h1>{{ correct }} out of {{ total }}</h1>
+
+			<p>thank you for playing the quiz!!</p>
+			<a href="{% url 'start_page' %}">
+			<button  style="vertical-align: middle"><span>OK </span></button></a>
+
+
+
+
+<table border="4">
+
+
+        <th>question</th>
+        <th>options</th>
+        <th>correct answer</th>
+
+
+
+{% for q in question_all %}
+
+    <tr>
+
+
+        <td>{{q.question }}</td>
+        <td>1.{{ q.answer1 }} <br>2.{{ q.answer2 }}<br> 3.{{ q.answer3 }}</td>
+
+        <td>{{ q.correct }}</td>
+
+
+{% endfor %}
+ </tr>
+</table>
+
+
+
+</body>
+</html>

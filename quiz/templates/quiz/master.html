@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>QUIZ</title>
+
+</head>
+<body>
+<b><b></b>{{  }}</b></h1>
+<table  border="6">
+
+        <th>Ranking</th>
+        <th>Team Name    </th>
+        <th> Number of Games Played    </th>
+        <th>Won   </th>
+        <th>Draw </th>
+        <th> Lost       </th>
+        <th> Goal Difference </th>
+        <th> Points </th>
+
+
+
+{% for list in lists %}
+    <tr>
+competition
+    <td> {{ list.rank_team }}</td>
+    <td> {{ list.team_name }}</td>
+    <td> {{ list.game_played }}</td>
+    <td> {{ list.won_game }}</td>
+    <td> {{ list.draw_game }}</td>
+    <td> {{ list.lost_game }}</td>
+    <td> {{ list.goal_difference }}</td>
+    <td> {{ list.points_game }}</td>
+
+
+{% endfor %}
+  </tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>QUIZ</title>
+
+</head>
+<body>
+<img src="http://www.scarymommy.com/wp-content/uploads/2015/01/girl-watching-TV.jpg"  style="width:300px;height:300px">
+				<a  href="{% url 'start_page' %}">HOME</a></li>
+
+			<h1>{{ quiz.name }}</h1>
+
+			<a href = "{% url 'question_page' quiz_number 1 %}">
+			<button  style="vertical-align: middle"><span>START</span></button></a>
+			
+
+</body>
+</html>
